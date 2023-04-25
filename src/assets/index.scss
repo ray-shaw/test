@@ -1,0 +1,100 @@
+/* ./src/index.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  h1 {
+    @apply text-xl font-bold md:text-3xl;
+  }
+  h2 {
+    @apply text-xl md:text-2xl;
+  }
+  h3 {
+    @apply font-text text-base md:text-lg;
+  }
+  h4 {
+    @apply text-xs md:text-lg;
+  }
+  h5 {
+    @apply font-text text-xs md:text-base;
+  }
+  hr {
+    @apply border-primary mt-1 my-4;
+  }
+}
+
+
+body {
+  @apply bg-[#10090C] text-white;
+
+  height: 100vh;
+}
+
+button {
+  @apply flex flex-grow justify-start items-center gap-3 rounded-full w-full;
+
+  &.primary {
+    @apply text-white bg-[#4BB8B5] uppercase text-xl font-bold px-6 py-3;
+  }
+
+  &.secondary {
+    @apply text-[#4BB8B5] bg-white uppercase text-xl font-bold px-6 py-3;
+  }
+}
+
+input[type=text],
+input[type=email],
+input[type=password] {
+  @apply flex flex-grow justify-center rounded-full w-full border border-[#4BB8B5] text-white bg-black text-xl font-bold px-6 py-3;
+}
+
+.router-link {
+  @apply block w-full px-4 py-2 border-b border-gray-200 cursor-pointer hover:bg-gray-100 hover:text-[#4BB8B5] focus:outline-none focus:ring-2 focus:ring-[#4BB8B5] focus:text-[#4BB8B5] dark:border-gray-600 dark:hover:bg-gray-600 dark:hover:text-white dark:focus:ring-gray-500 dark:focus:text-white;
+
+  &s {
+    @apply w-auto mb-4 bg-black;
+  }
+}
+
+/* Pre configured class */
+.router-link-active {
+  @apply bg-[#4BB8B5];
+}
+
+.t-main-set {
+  @apply lg:container; /* lg:mx-auto md:px-20 2xl:px-40 */
+}
+
+.t-transition-effect {
+  @apply transition duration-500 ease-in-out;
+}
+/* Pre configured class */
+
+/* AUTH */
+/* .t-auth-section {
+  @apply my-4 md:my-20 w-11/12 md:w-2/3 lg:w-3/5 mx-auto;
+}
+.t-auth-form {
+  @apply bg-[#10090C] shadow-md p-6;
+} */
+/* AUTH */
+
+/* Inputs and Buttons */
+/* .t-input {
+  @apply shadow
+    appearance-none
+    border
+    rounded
+    p-3
+    text-black
+    leading-tight
+    focus:outline-none;
+}
+
+.t-btn {
+  @apply font-bold py-2 px-4 rounded focus:outline-none ease-linear
+  transition-all
+  duration-150 hover:bg-opacity-75;
+} */
+/* Inputs and Buttons */
